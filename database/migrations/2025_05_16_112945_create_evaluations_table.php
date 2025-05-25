@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('evaluations', function (Blueprint $table) {
             $table->id();
-            $table->string('libelle');
-            $table->text('description');
-            $table->date('dateDebut');
+        
+            $table->string('intitule');
+            $table->string('statut')->default('en cours');
+            $table->date('dateDebut');      
             $table->date('dateFin');
         
 

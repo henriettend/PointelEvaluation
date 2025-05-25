@@ -11,7 +11,11 @@ class Evaluation extends Model
         'description',
         'date_debut',
         'date_fin',
+        'campagne_evaluation_id',
         'type_evaluation_id',
+        'statut',
+        'competence_id',
+        
         'competence_id',
         'user_id'
     ];

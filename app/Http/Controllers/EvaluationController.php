@@ -12,7 +12,9 @@ class EvaluationController extends Controller
      */
     public function index()
     {
-        //
+        $evaluations=Evaluation::all();
+
+        return view('evaluation.index', compact('evaluations'));
     }
 
     /**
